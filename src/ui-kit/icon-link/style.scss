@@ -1,0 +1,22 @@
+@import '~@styles/colors';
+
+.icon-link {
+  display: flex;
+
+  img {
+    width: 16px;
+    height: 16px;
+  }
+
+  a {
+    margin-left: 5px;
+    color: $light-grey;
+    text-decoration: none;
+
+    &:hover {
+      color: $blue;
+      text-decoration: underline;
+    }
+  }
+}
+

@@ -1,0 +1,12 @@
+@import '~@styles/colors';
+.user {
+  display: flex;
+  justify-content: space-around;
+  border: 10px solid $light-grey;
+  padding: 30px;
+
+    &--error {
+      text-align: center;
+      color: $red;
+    }
+}

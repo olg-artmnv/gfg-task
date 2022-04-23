@@ -1,0 +1,51 @@
+@import '~@styles/colors';
+
+.user-info {
+  width: 300px;
+  margin: auto;
+
+  &__avatar {
+
+    img {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+    }
+  }
+
+  &__name {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  &__login {
+    color: $light-grey;
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  &__follow-info {
+    display: flex;
+    font-size: 14px;
+  }
+
+  &__follow-button {
+    margin: 15px 0;
+
+    button {
+      width: 100%;
+      border-radius: 6px;
+      border: 1px solid $light-grey;
+      padding: 5px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $grey;
+      }
+    }
+  }
+
+  &__contacts {
+    margin: 15px 0;
+  }
+}

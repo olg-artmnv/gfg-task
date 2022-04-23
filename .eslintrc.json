@@ -1,0 +1,50 @@
+{
+    "env": {
+        "browser": true
+    },
+    "extends": [
+        "airbnb",
+        "plugin:react-hooks/recommended"
+    ],
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "paths": ["src"],
+                "extensions": [".tsx", ".ts", ".js"]
+            }
+        }
+    },
+    "plugins": [
+        "@typescript-eslint",
+        "react",
+        "react-hooks"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "rules": {
+        "@typescript-eslint/no-use-before-define": 2,
+        "import/extensions": 0,
+        "import/prefer-default-export": 0,
+        "indent": [2, 4, {"SwitchCase": 1}],
+        "jsx-a11y/media-has-caption": "off",
+        "multiline-ternary": [2, "always-multiline"],
+        "no-undef": "off",
+        "no-use-before-define": 0,
+        "object-curly-spacing": [2, "never"],
+        "operator-linebreak": [2, "after", { "overrides":  { "?":  "before", ":": "before" } }],
+        "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".ts"] }],
+        "react/jsx-indent": [2, 4],
+        "react/jsx-indent-props": [2, 4],
+        "react/require-default-props": 0,
+        "react-hooks/exhaustive-deps": 1,
+        "react-hooks/rules-of-hooks": 2,
+        "react/jsx-props-no-spreading": 0,
+        "import/no-unresolved": 0,
+        "no-shadow": 0,
+        "max-len": [1, {"code": 130}],
+        "sort-imports": [2, {
+            "allowSeparatedGroups": true,
+            "ignoreCase": true,
+            "ignoreDeclarationSort": true
+        }]
+    }
+}

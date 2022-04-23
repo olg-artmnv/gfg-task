@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitReturns": true,
+    "noImplicitAny": true,
+    "module": "es6",
+    "moduleResolution": "node",
+    "target": "es5",
+    "allowJs": true,
+    "jsx": "react",
+    "baseUrl": "src",
+    "paths": {
+      "@contexts": ["./contexts"],
+      "@hooks": ["./hooks"],
+      "@images/*": ["./assets/images/*"],
+      "@pages": ["./pages"],
+      "@requests": ["./requests"],
+      "@styles/*": ["./styles/*"],
+      "@ui-kit": ["./ui-kit"],
+      "@urls": ["./urls"]
+    }
+  },
+  "include": [
+    "./src/**/*",
+    "./config/types"
+  ]
+}
